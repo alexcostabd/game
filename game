@@ -1,0 +1,13 @@
+from random import randint
+from time import sleep
+('-=-'*20)
+print('VAMOS FAZER UMA DISPUTA? TENTE ADIVINHAR EM QUE NUMERO PENSEI... ')
+('-=-'*20)
+computador = randint(0, 5)
+jogador = int(input(' EM QUAL NUMERO PENSEI?\n'))
+print('PROCESSANDO...')
+sleep(3)
+if computador == jogador:
+  print('PARABENS! VOCE ACERTOU EU PENSEI EM {} E VOCE DISSE {}'.format(computador, jogador))
+else:
+  print('VOCE PERDEU! EU PENSEI NO NUMERO {} E VOCE DISSE {}'.format(computador, jogador))
